@@ -9,11 +9,11 @@ spec:
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 8000
-          name: https
+          name: http
           protocol: TCP
       env:
         - name: DATABASE_URL
-          value: "postgresql+psycopg2://test:test@db:5432/test"
+          value: "postgresql+psycopg2://test:test@10.96.159.204:5432/test"
         - name: HOST
           value: "0.0.0.0"
         - name: PORT
