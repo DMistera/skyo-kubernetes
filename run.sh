@@ -8,5 +8,7 @@ kubectl create -f ./postgres-service.yaml
 kind load docker-image docker_backend
 kind load docker-image docker_frontend
 
-kubectl create -f backend-pod.yaml
-kubectl create -f frontend-pod.yaml
+kubectl create -f backend-deployment.yaml
+kubectl create -f backend-service.yaml
+kubectl create -f frontend-deployment.yaml
+kubectl create -f frontend-service.yaml
